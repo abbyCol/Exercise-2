@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+}
+html,
+body {
+    min-height: 100%;
+    max-width: 1250px;
+    margin: 0px auto;
+    background-image: url(../imgs/pexels-photo-2981602.jpeg);
+    background-position: center;
+    background-size: 2000px;
+}
+a {
+    color: black;
+    text-decoration: none;
+}
+header {
+    background: #999;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+}
+.main__content {
+    margin: 0 auto;
+    margin-top: 100px;
+    font-size: 55px;
+    text-align: center;
+    line-height: 450px;
+    font-family: 'Pacifico', cursive;
+}
+.main__content a:link { color: white; }
+.main__content a:visited { color: white; }
+.main__content a:hover { color: white; }
+.main__content a:active { color: white; }
+
+.hashtag {
+    padding: 15px 5px 0px 5px;
+    width: 180px;
+    text-align: center;
+    font-family: sans-serif;
+    background: white;
+    border: 1px solid grey;
+    display: inline;
+    font-family: 'Special Elite', cursive;
+    font-size: 14px;
+}
+.hashtag__footer {} main {
+    height: 80vh;
+}
+.year {
+    width: 80px;
+    display: inline;
+    padding: 15px;
+    font-family: 'Special Elite', cursive;
+    background-color: aqua;
+}
+.year__current {
+    background-color: aquamarine;
+    font-weight: bolder;
+}
+.story {} 
+.grid-parent {
+    display: grid;
+    max-width: 500px;
+    grid-template-columns: 2fr 2fr 2fr;
+}
+.cube {
+    padding-top: 300px;
+    margin: 0 auto;
+}
+.story__cube {
+    height: 125px;
+    background-color: darkcyan;
+}
+.story__theme {
+    font-size: 25px;
+    font-family: 'Pacifico', cursive;
+    display: inline;
+}
+.story__month {
+    color: white;
+    font-family: 'Special Elite', cursive;
+    line-height: 125px;
+    text-align: center;
+}
+.story__text {
+    font-family: 'Special Elite', cursive;
+    padding: 50px;
+    font-size: 15px;
+}
+.story__author {
+    color: black;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+
+/*
+
+https://www.w3schools.com/howto/howto_css_tooltip.asp
+I used w3schools to achieve the tooltip function.
+
+*/
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    padding: 0px 50px 0px 50px;
+    visibility: hidden;
+    width: 400px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+   margin-left: -60px;
+    left: 50%;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+    line-height: 30px;
+}
